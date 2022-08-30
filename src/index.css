@@ -72,6 +72,13 @@
     text-transform: uppercase;
   }
 
+  .text-footer {
+    @apply font-bold text-surface uppercase;
+    font-size: 0.75rem;
+    line-height: 1rem;
+    letter-spacing: 2px;
+  }
+
   @media screen(md) {
     .heading-xl {
       font-size: 40px;
@@ -102,10 +109,81 @@
     text-transform: uppercase;
   }
 
+  .ternary-button {
+    @apply font-bold uppercase w-full flex items-center justify-between text-surface gap-5;    
+    font-size: 0.75rem;
+    line-height: 1rem;
+    letter-spacing: 2px;
+  }
+
+  .ternary-button::after{
+    @apply block bg-no-repeat bg-contain bg-center;
+    content: '';
+    background-image: url(/assets/shared/desktop/arrow.svg);
+    width: 2.625rem;
+    height: 0.75rem;  
+    filter: brightness(0) invert(100%);
+
+  }
+
   @media screen(md) {
     .primary-button {
       font-size: 0.75rem;
       line-height: 1rem;
     }
+  }
+}
+
+@layer components {
+  .social-media-icon {
+    @apply block bg-surface w-5 h-5;
+    mask-size: contain;
+    mask-repeat: no-repeat;
+    mask-position: center;
+  }
+
+  .social-media-icon[aria-label="facebook"] {
+    mask-image: url(/assets/shared/desktop/facebook.svg);
+  }
+
+  .social-media-icon[aria-label="instagram"] {
+    mask-image: url(/assets/shared/desktop/instagram.svg);
+  }
+
+  .social-media-icon[aria-label="youtube"] {
+    mask-image: url(/assets/shared/desktop/youtube.svg);
+  }
+
+  .social-media-icon[aria-label="twitter"] {
+    mask-image: url(/assets/shared/desktop/twitter.svg);
+  }
+
+  .social-media-icon[aria-label="pinterest"] {
+    mask-image: url(/assets/shared/desktop/pinterest.svg);
+  }
+
+  .social-media-icon[aria-label="facebook"]:hover {
+    background: linear-gradient(225deg, #63afdb 0%, #6028f1 100%);
+  }
+
+  .social-media-icon[aria-label="instagram"]:hover {
+    background: linear-gradient(
+      26.57deg,
+      #ffc593 0%,
+      #bc7198 43.29%,
+      #5a77ff 83.33%
+    );
+  }
+
+  .social-media-icon[aria-label="youtube"]:hover {
+    background: linear-gradient(45deg, #d3205a 0%, #ff5a5a 100%);
+  }
+
+  .social-media-icon[aria-label="twitter"]:hover {
+    background: linear-gradient(225deg, #65ffeb 0%, #27718a 100%);
+  }
+
+  .social-media-icon[aria-label="pinterest"]:hover {
+    background: linear-gradient(225deg, #f6c683 0%, #de3838 100%);
   }
 }
