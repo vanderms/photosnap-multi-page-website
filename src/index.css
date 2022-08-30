@@ -19,6 +19,8 @@
   #main {
     @apply mx-auto;
     max-width: 90rem;
+    min-height: 120vh;
+    overflow: hidden;
   }
 
   .container {
@@ -54,10 +56,20 @@
     text-transform: uppercase;
   }
 
-  .body-md {
+  .paragraph-md {
     font-weight: 400;
     font-size: 0.9375rem;
     line-height: 1.5625rem;
+  }
+
+  .text-nav {
+    @apply hover:opacity-30;
+    font-weight: 700;
+    font-size: 0.9375rem;
+    line-height: 1.25rem;
+    text-align: center;
+    letter-spacing: 2.5px;
+    text-transform: uppercase;
   }
 
   @media screen(md) {
@@ -66,8 +78,34 @@
       line-height: 48px;
       letter-spacing: 4.16667px;
     }
+
+    .text-nav {
+      font-size: 0.75rem;
+      line-height: 1rem;
+      letter-spacing: 2px;
+    }
   }
 
   @media screen(lg) {
+  }
+}
+
+@layer components {
+  .primary-button {
+    @apply grid place-items-center bg-neutral-950 text-surface w-full;
+    font-weight: 700;
+    font-size: 0.9375rem;
+    line-height: 1.25rem;
+    padding: 0.875rem 0px;
+    letter-spacing: 2.5px;
+    cursor: pointer;
+    text-transform: uppercase;
+  }
+
+  @media screen(md) {
+    .primary-button {
+      font-size: 0.75rem;
+      line-height: 1rem;
+    }
   }
 }
