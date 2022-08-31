@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 
-interface CardAProps {
+interface SectionAProps {
   title: string;
   image: string;
   cta: { text: string; to: string };
@@ -9,7 +9,7 @@ interface CardAProps {
   hero: boolean;
 }
 
-export const CardA: React.FC<CardAProps> = (props) => {
+export const SectionA: React.FC<SectionAProps> = (props) => {
   console.log(props.inverted, props.title);
 
   return (
