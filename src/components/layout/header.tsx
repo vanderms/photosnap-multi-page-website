@@ -1,5 +1,8 @@
-import { Link, useLocation } from "react-router-dom";
+import { Link, NavLink, useLocation } from "react-router-dom";
 import { useState, useEffect } from "react";
+import data from "@/data/layout/layout.json";
+
+const navlinks = data.navLinks.filter((x) => x.label != "home");
 
 export const Header: React.FC = () => {
   const [sidebar, setSidebar] = useState<{ open: boolean }>({
@@ -13,7 +16,7 @@ export const Header: React.FC = () => {
 
   return (
     <header className="h-[4.5rem] ">
-      <h1 className="sr-only">Photosnap Website</h1>
+      <h1 className="sr-only">{data.header.title}</h1>
       <a href="#main" className="sr-only">
         Skip nav
       </a>
@@ -42,26 +45,18 @@ export const Header: React.FC = () => {
              `}
           >
             <ul className="flex flex-col items-center gap-5 w-full md:flex-row md:w-max md:gap-9 md:mr-1">
-              <li>
-                <Link className="text-nav" to="/stories">
-                  STORIES
-                </Link>
-              </li>
-              <li>
-                <Link className="text-nav" to="/features">
-                  FEATURES
-                </Link>
-              </li>
-              <li>
-                <Link className="text-nav" to="/pricing">
-                  PRICING
-                </Link>
-              </li>
+              {navlinks.map((link) => (
+                <li>
+                  <Link className="text-nav" to={link.to}>
+                    {link.label}
+                  </Link>
+                </li>
+              ))}
             </ul>
             <div className="opacity-20 w-full h-0 border-b border-x-neutral-950 md:hidden"></div>
             <div className="w-full md:w-[9.875rem]">
-              <Link to="/" className="primary-button">
-                Get an Invite
+              <Link to={data.header.cta.to} className="primary-button">
+                {data.header.cta.text}
               </Link>
             </div>
           </div>

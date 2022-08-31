@@ -1,0 +1,58 @@
+{
+  "header": {
+    "title": "Photosnap",
+    "cta": {
+      "text": "GET AN INVITE",
+      "to": "/"
+    }
+  },
+
+  "footer": {
+    "cta": {
+      "text": "GET AN INVITE",
+      "to": "/"
+    },
+    "copyright": "Copyright 2019. All Rights Reserved"
+  },
+
+  "navLinks": [
+    {
+      "label": "home",
+      "to": "/"
+    },
+    {
+      "label": "stories",
+      "to": "/stories"
+    },
+    {
+      "label": "features",
+      "to": "/features"
+    },
+    {
+      "label": "pricing",
+      "to": "/pricing"
+    }
+  ],
+  "socialLinks": [
+    {
+      "aria": "facebook",
+      "href": "https://www.facebook.com"
+    },
+    {
+      "aria": "youtube",
+      "href": "https://www.youtube.com"
+    },
+    {
+      "aria": "twitter",
+      "href": "https://www.twitter.com"
+    },
+    {
+      "aria": "pinterest",
+      "href": "https://www.pinterest.com"
+    },
+    {
+      "aria": "instagram",
+      "href": "https://www.instagram.com"
+    }
+  ]
+}
