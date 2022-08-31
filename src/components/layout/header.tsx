@@ -46,7 +46,7 @@ export const Header: React.FC = () => {
           >
             <ul className="flex flex-col items-center gap-5 w-full md:flex-row md:w-max md:gap-9 md:mr-1">
               {navlinks.map((link) => (
-                <li>
+                <li key={link.label}>
                   <Link className="text-nav" to={link.to}>
                     {link.label}
                   </Link>

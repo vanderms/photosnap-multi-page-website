@@ -18,9 +18,26 @@
 @layer components {
   #main {
     @apply mx-auto;
-    max-width: 90rem;
     min-height: 120vh;
     overflow: hidden;
+  }
+
+  @media screen(sm) {
+    #main {
+      max-width: 27.5rem;
+    }
+  }
+
+  @media screen(md) {
+    #main {
+      max-width: 48rem;
+    }
+  }
+
+  @media screen(xl) {
+    #main {
+      max-width: 90rem;
+    }
   }
 
   .container {
@@ -107,10 +124,18 @@
   }
 
   .ternary-button {
-    @apply font-bold uppercase w-full flex items-center justify-between text-surface gap-5;
+    @apply font-bold uppercase w-full flex items-center justify-between gap-5;
     font-size: 0.75rem;
     line-height: 1rem;
     letter-spacing: 2px;
+  }
+
+  .ternary-button.black {
+    @apply text-neutral-950;
+  }
+
+  .ternary-button.white {
+    @apply text-surface;
   }
 
   .ternary-button:hover span {
@@ -123,6 +148,9 @@
     background-image: url(/assets/shared/desktop/arrow.svg);
     width: 2.625rem;
     height: 0.75rem;
+  }
+
+  .ternary-button.white::after {
     filter: brightness(0) invert(100%);
   }
 
