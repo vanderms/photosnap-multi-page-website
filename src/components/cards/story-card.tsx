@@ -36,7 +36,7 @@ export const StoryCard: React.FC<Props> = (props) => {
           <div className="mt-4 w-full h-0 border-b border-surface opacity-25"></div>
           <div className="mt-5">
             <p id={linkId} className="ternary-button white">
-              READ STORY
+              <span>READ STORY</span>
             </p>
           </div>
         </header>

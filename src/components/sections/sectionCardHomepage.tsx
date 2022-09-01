@@ -16,16 +16,12 @@ export const SectionCardHomepage: React.FC<SectionProps> = (props) => {
       className={`grid grid-cols-1 justify-items-center 
       ${
         props.inverted
-          ? "md:grid-cols-[35.5469%,1fr] xl:grid-cols-[1fr,57.6389%]"
-          : "md:grid-cols-[1fr,35.5469%] xl:grid-cols-[57.6389%,1fr]"
+          ? "md:grid-cols-[1fr,35.5469%] xl:grid-cols-[1fr,57.6389%]"
+          : "md:grid-cols-[35.5469%,1fr] xl:grid-cols-[57.6389%,1fr]"
       }
     `}
     >
-      <picture
-        className={
-          props.inverted ? "md:order-[0] xl:order-1" : "md:order-1 xl:order-[0]"
-        }
-      >
+      <picture className={props.inverted ? "md:order-1" : ""}>
         <source
           media="(min-width: 75rem)"
           srcSet={`/assets/home/desktop/${props.image}`}
@@ -61,7 +57,7 @@ export const SectionCardHomepage: React.FC<SectionProps> = (props) => {
               className={` ternary-button ${props.hero ? "white" : "black"}`}
               to={props.cta.to}
             >
-              {props.cta.text}
+              <span>{props.cta.text}</span>          
             </Link>
           </div>
         </div>
