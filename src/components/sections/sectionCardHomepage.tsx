@@ -1,17 +1,16 @@
 import { Link } from "react-router-dom";
 
-interface SectionAProps {
+interface SectionProps {
   title: string;
   image: string;
   cta: { text: string; to: string };
   description: string;
   inverted: boolean;
   hero: boolean;
+  key: number;
 }
 
-export const SectionA: React.FC<SectionAProps> = (props) => {
-  console.log(props.inverted, props.title);
-
+export const SectionCardHomepage: React.FC<SectionProps> = (props) => {
   return (
     <article
       className={`grid grid-cols-1 justify-items-center 
