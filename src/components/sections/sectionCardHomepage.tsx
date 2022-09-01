@@ -43,7 +43,7 @@ export const SectionCardHomepage: React.FC<SectionProps> = (props) => {
       <header
         className={`py-20  md:flex items-center xl:py-10 relative ${
           props.hero
-            ? "text-surface bg-neutral-800 w-screen md:w-full"
+            ? "text-surface bg-neutral-800 w-[min(100vw,27.5rem)] md:w-full"
             : "text-neutral-800"
         }`}
       >

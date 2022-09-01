@@ -1,5 +1,9 @@
 {
-  "banner": {},
+  "banner": {
+    "title": "FEATURES",
+    "description": "We make sure all of our features are designed to be loved by every aspiring and even professional photograpers who wanted to share their stories.",
+    "image": "/assets/features/mobile/hero.jpg"
+  },
   "features": [
     {
       "icon": "responsive.svg",
@@ -29,7 +33,7 @@
     {
       "icon": "drag-drop.svg",
       "title": "Drag & Drop icon",
-      "description": "Easily drag and drop your icon and get beautiful shots everytime. No over the top tooling to add friction to creating stories."      
+      "description": "Easily drag and drop your icon and get beautiful shots everytime. No over the top tooling to add friction to creating stories."
     }
   ]
 }

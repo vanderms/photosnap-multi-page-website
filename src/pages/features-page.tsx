@@ -1,7 +1,12 @@
-export const FeaturesPage: React.FC = () => { 
+import { BannerSection } from "@/components/sections/banner-section";
+import { FeaturesSection } from "@/components/sections/features-section";
+import data from "@/data/pages/features.json";
+
+export const FeaturesPage: React.FC = () => {
   return (
-    <div>
-      FeaturesPage works!
-    </div>
+    <>
+      <BannerSection {...data.banner} />
+      <FeaturesSection />
+    </>
   );
 };
