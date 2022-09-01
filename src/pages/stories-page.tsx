@@ -1,7 +1,9 @@
-export const StoriesPage: React.FC = () => { 
+import { StoriesHeroSection } from "@/components/sections/stories-hero-section";
+
+export const StoriesPage: React.FC = () => {
   return (
-    <div>
-      StoriesPage works!
-    </div>
+    <>
+      <StoriesHeroSection />
+    </>
   );
 };

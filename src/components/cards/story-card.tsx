@@ -14,8 +14,11 @@ export const StoryCard: React.FC<Props> = (props) => {
   const linkId = useId();
 
   return (
-    <Link to="/" aria-labelledby={linkId}>
-      <article className="relative top-0 xl:hover:top-[-1.875rem] transition-all duration-500 z-40">
+    <Link to={props.link} aria-labelledby={linkId}>
+      <article
+        className="relative overflow-hidden top-0 xl:hover:top-[-1.875rem] xl:hover:overflow-visible
+      transition-all duration-500 z-40"
+      >
         <picture className="block w-full h-max [background:var(--stories-gradient)]">
           <source
             media="(min-width: 45rem)"
@@ -29,7 +32,7 @@ export const StoryCard: React.FC<Props> = (props) => {
             "
           />
         </picture>
-        <header className="absolute z-10 bottom-10 text-surface px-8 w-full">          
+        <header className="absolute z-10 bottom-10 text-surface px-8 w-full">
           {props.date && <p className="paragraph-sm">{props.date}</p>}
           <h3 className="heading-sm">{props.title}</h3>
           <p className="paragraph-sm mt-1">by {props.author}</p>
