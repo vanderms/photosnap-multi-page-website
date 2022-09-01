@@ -1,7 +1,7 @@
 import data from "@/data/pages/stories.json";
 import { StoryCard } from "../cards/story-card";
 
-export const PreviewFeaturesSection: React.FC = () => {
+export const PreviewStoriesSection: React.FC = () => {
   return (
     <section>
       <header className="sr-only">

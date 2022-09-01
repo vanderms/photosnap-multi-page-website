@@ -1,4 +1,5 @@
-import { PreviewFeaturesSection } from "@/components/sections/preview-stories-section";
+import { PreviewFeaturesSection } from "@/components/sections/preview-features-section";
+import { PreviewStoriesSection } from "@/components/sections/preview-stories-section";
 import { SectionCardHomepage } from "@/components/sections/sectionCardHomepage";
 import data from "@/data/pages/homepage.json";
 
@@ -17,6 +18,7 @@ export const HomePage: React.FC = () => {
       {sections.map((section) => (
         <SectionCardHomepage {...section} />
       ))}
+      <PreviewStoriesSection />
       <PreviewFeaturesSection />
     </>
   );
