@@ -24,7 +24,7 @@
   #main {
     @apply mx-auto;
     min-height: 120vh;
-    overflow: hidden;
+    overflow: hidden;    
   }
 
   @media screen(sm) {
