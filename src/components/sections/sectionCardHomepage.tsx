@@ -41,12 +41,19 @@ export const SectionCardHomepage: React.FC<SectionProps> = (props) => {
         />
       </picture>
       <header
-        className={`py-20  md:flex items-center xl:py-10 ${
+        className={`py-20  md:flex items-center xl:py-10 relative ${
           props.hero
             ? "text-surface bg-neutral-800 w-screen md:w-full"
             : "text-neutral-800"
         }`}
       >
+        {props.hero && (
+          <div
+            className="absolute top-0 left-8 w-32 h-1.5 bg-rainbow md:w-1.5 md:h-[19rem] md:top-[10.8125rem]
+            md:left-0
+          "
+          ></div>
+        )}
         <div className="container md:w-[24.1875rem] md:h-max">
           <h2 className="heading-xl">{props.title}</h2>
           <p className="mt-4 paragraph-md opacity-60 xl:mt-5">
@@ -57,7 +64,7 @@ export const SectionCardHomepage: React.FC<SectionProps> = (props) => {
               className={` ternary-button ${props.hero ? "white" : "black"}`}
               to={props.cta.to}
             >
-              <span>{props.cta.text}</span>          
+              <span>{props.cta.text}</span>
             </Link>
           </div>
         </div>

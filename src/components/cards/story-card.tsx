@@ -29,7 +29,7 @@ export const StoryCard: React.FC<Props> = (props) => {
             "
           />
         </picture>
-        <header className="absolute z-10 bottom-10 text-surface px-8 w-full">
+        <header className="absolute z-10 bottom-10 text-surface px-8 w-full">          
           {props.date && <p className="paragraph-sm">{props.date}</p>}
           <h3 className="heading-sm">{props.title}</h3>
           <p className="paragraph-sm mt-1">by {props.author}</p>

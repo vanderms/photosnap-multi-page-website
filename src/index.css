@@ -180,6 +180,11 @@
 }
 
 @layer components {
+
+  .bg-rainbow{
+    background: var(--rainbow-gradient);
+  }
+
   .social-media-icon {
     @apply block bg-surface w-5 h-5;
     mask-size: contain;
