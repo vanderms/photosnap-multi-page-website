@@ -1,0 +1,76 @@
+{
+  "banner": {
+    "title": "PRICING",
+    "description": "Create a your stories, Photosnap is a platform for photographers and visual storytellers. It's the simple way to create and share your photos.",
+    "image": "/assets/pricing/mobile/hero.jpg"
+  },
+  "plans": {
+    "Basic": {
+      "name": "Basic",
+      "highlighted": false,
+      "description": "Includes basic usage of our platform. Recommended for new and aspiring photographers.",
+      "price": {
+        "monthly": 19.0,
+        "yearly": 190.0
+      },
+      "features": {
+        "f0": true,
+        "f1": true,
+        "f2": false,
+        "f3": false,
+        "f4": false,
+        "f5": false,
+        "f6": false,
+        "f7": false
+      }
+    },
+    "Pro": {
+      "name": "Pro",
+      "highlighted": true,
+      "description": "More advanced features available. Recommended for photography veterans and professionals.",
+      "price": {
+        "monthly": 39.0,
+        "yearly": 390.0
+      },
+      "features": {
+        "f0": true,
+        "f1": true,
+        "f2": true,
+        "f3": true,
+        "f4": false,
+        "f5": false,
+        "f6": false,
+        "f7": false
+      }
+    },
+    "Business": {
+      "name": "Business",
+      "highlighted": false,
+      "description": "Additional features available such as more detailed metrics. Recommended for business owners.",
+      "price": {
+        "monthly": 39.0,
+        "yearly": 390.0
+      },
+      "features": {
+        "f0": true,
+        "f1": true,
+        "f2": true,
+        "f3": true,
+        "f4": true,
+        "f5": true,
+        "f6": true,
+        "f7": true
+      }
+    }
+  },
+  "features": [
+    "UNLIMITED STORY POSTING",
+    "UNLIMITED PHOTO UPLOAD",
+    "EMBEDDING CUSTOM CONTENT",
+    "CUSTOMIZE METADATA",
+    "ADVANCED METRICS",
+    "PHOTO DOWNLOADS",
+    "SEARCH ENGINE INDEXING",
+    "CUSTOM ANALYTICS"
+  ]
+}
