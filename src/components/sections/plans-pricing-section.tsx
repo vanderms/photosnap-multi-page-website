@@ -5,8 +5,6 @@ import { PricingCard } from "../cards/pricing-card";
 export const PlansPricingSection: React.FC = () => {
   const [period, setPeriod] = useState<string>("monthly");
 
-  console.log(data.features);
-
   const onChange: ChangeEventHandler<HTMLInputElement> = (e) => {
     if (e.currentTarget.checked) {
       setPeriod(e.currentTarget.value);
